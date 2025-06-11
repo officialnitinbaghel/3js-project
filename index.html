@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Solar System</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
-  <h1>3D Solar System Simulation</h1>
-  <div id="controls"></div>
-  <canvas id="solarCanvas"></canvas>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Solar System Simulation</h1>
+        <div id="scene-container"></div>
+        <div class="controls">
+            <div class="speed-controls">
+                <h2>Planet Speed Controls</h2>
+                <div id="planet-sliders"></div>
+            </div>
+            <div class="global-controls">
+                <button id="pause-resume">Pause</button>
+                <button id="reset-speeds">Reset Speeds</button>
+                <button id="theme-toggle">Dark Mode</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
